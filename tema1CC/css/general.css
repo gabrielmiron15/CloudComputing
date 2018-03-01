@@ -1,0 +1,119 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size:16px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+.input-container {
+    position:relative;
+    margin:10px 0;
+}
+.input-search {
+    font-size:15px;
+    width:80%;
+    padding:10px;
+    border-radius:2px;
+    border:1px solid #c1c1c1;
+    margin-top:20px;
+    box-sizing: border-box;
+}
+.input-search:focus {
+    outline:#f59839;
+    border-color:#f59839 ;
+}
+.input-search:focus ~ label {
+    color:#f59839;
+}
+.label-input {
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:16px;
+}
+.title {
+    transition: 0.4s all;
+    font-size:18px;
+    padding:10px 12px;
+    border:1px solid #f59839;
+    background-color: white;
+    margin:10px 0;
+    cursor: pointer;
+}
+.title:hover {
+    background-color: #f59839;
+    color:white;
+}
+.title--active {
+    background-color: #f59839;
+    color:white;
+}
+.generic-text {
+    display: none;
+}
+.button-search {
+    font-size:16px;
+    display: inline-block;
+    padding:10px 15px;
+    color:white;
+    background-color: #f59839;
+    border-radius:4px;
+    cursor:pointer;
+    width:19%;
+    transition:0.4s all;
+    box-sizing: border-box;
+    text-align: center;
+}
+.button-search:hover {
+    opacity: 0.8;
+}
+.center {
+    text-align: center;
+}
+.footer {
+    margin-top:100px;
+}
